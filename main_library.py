@@ -17,6 +17,11 @@ def csv_parse(line):
         else:
             current_field += char
     fields.append(current_field)  # menambahkan kata yang sudah dibuat oleh For Loop kedalam fields
+
+    # Debugging Station 1
+    # line_debug = "username;password;role;coin"
+    # print(csv_parse(line_debug))
+    
     return fields
 
 def check_user(user):
@@ -46,7 +51,7 @@ def check_user(user):
     # Hasil akhir dari fungsi try
     return line_found
 
-# Debugging Station
+# Debugging Station 2
 # user1 = "user1"
 # user2 = "user2"
 # user3 = "user3"

@@ -45,10 +45,10 @@ if valid:
         print(f"Tidak ada yang menggunakan username '{user}'.")
         
         # merubah data input yang diterima menjadi format CSV
-        new_input = f"{data[6]},{user},{pasw};Agent;0\n"
+        new_input = f"{data[6]};{user};{pasw};Agent;0\n"
 
         # masukkan data yang telah diformat ulang kedalam file CSV 
         with open(user_csv, 'a') as file:
             file.write(new_input)
-
+        
         print("Username telah dibuat!")
