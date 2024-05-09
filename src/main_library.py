@@ -15,3 +15,16 @@ def csv_parse(line):
             current_field += char
     fields.append(current_field)  # menambahkan kata yang sudah dibuat oleh For Loop kedalam fields
     return fields
+ 
+ # Fungsi mencari nilai maksimum
+def maksi(a, b):
+    if a>b: return a
+    else: return b
+
+# Fungsi mengecek Integer atau bukan
+def cekinteger(a):
+    if len(a) == 0: return False
+    else:
+        for char in a:
+            if not ('0' <= char <='9'): return False
+        return True
